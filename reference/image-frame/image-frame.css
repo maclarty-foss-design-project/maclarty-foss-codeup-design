@@ -1,0 +1,22 @@
+body {
+	background: seagreen;
+}
+
+/* returnreturn */
+
+/* this only works when using external css */
+/* inline does not work */
+
+/* background color is 30px larger than img */
+/* current image is 640px x 426px */
+
+.img-frame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 670px;
+	height: 456px;
+
+	background-color: red;
+}
