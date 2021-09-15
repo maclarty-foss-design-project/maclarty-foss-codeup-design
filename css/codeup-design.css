@@ -169,6 +169,19 @@ h3 {
 	background-color: var(--circle-teal);
 }
 
+/*.frame {*/
+/*	width: auto;*/
+/*  	height: auto;*/
+/*	border: 3px solid lightgray;*/
+/*	background: var(--bg-lightgray);*/
+/*  	margin: auto;*/
+/*  	padding: 15px 10px;*/
+/*}*/
+
+/*img {*/
+/*	width: 90%;*/
+/*	height: 90%;*/
+/*}*/
 
 /* h1 {
 	font-family: "Anton", sans-serif;
