@@ -1,0 +1,6 @@
+screen size visibility variables:
+
+https://getbootstrap.com/docs/4.0/utilities/display/
+
+* * *
+
