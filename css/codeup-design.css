@@ -9,13 +9,13 @@
 	--circle-teal: #00ABA9;
 }
 body {
-	/*background-color: var(--bg-lightgray);*/
-	background-color: cornflowerblue; /* for container dimensions and color contrasts */
+	background-color: var(--bg-lightgray);
+	/*background-color: cornflowerblue; !* for container dimensions and color contrasts *!*/
 }
 
 .logo-default {
-	height: 105px;
-	width: 105px;
+	height: 130px;
+	width: 130px;
 }
 
 .contact-info {
@@ -23,28 +23,46 @@ body {
 
 }
 
-h3 {
-	font-family: "Anton", sans-serif;
+.codeup-design-title>h1 {
+	font-family: "Abel", sans-serif;
+}
 
+.nav-links {
+	margin-top: 1em;
+	font-family: "Abel", sans-serif;
+	width: 313px;
+	/*justify-content: space-evenly;*/
+}
+
+.visual-design {
+	font-family: "Anton", sans-serif;
+	width: 313px;
+}
+
+.visual-design>h1 {
+	font-size: 2.5em;
+}
+
+.circles {
+	width: 313px;
+	margin: auto;
 }
 
 .circle {
 	margin: .5em;
-	width: 105px;
-	height: 105px;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: solid 7px white;
+	color: white;
+	font-family: "Anton", sans-serif;
+	font-size: 1.5em;
 }
 
 .circle-green {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	border-radius: 50%;
-	border: solid 7px white;
-
-	font-family: anton, sans-serif;
-	color: white;
-
 	background-color: var(--circle-green);
 }
 
@@ -68,13 +86,6 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	border-radius: 50%;
-	border: solid 7px white;
-
-	font-family: anton, sans-serif;
-	color: white;
-
 	background-color: var(--circle-orange);
 }
 
@@ -98,13 +109,6 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	border-radius: 50%;
-	border: solid 7px white;
-
-	font-family: anton, sans-serif;
-	color: white;
-
 	background-color: var(--circle-red);
 }
 
@@ -128,13 +132,6 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	border-radius: 50%;
-	border: solid 7px white;
-
-	font-family: anton, sans-serif;
-	color: white;
-
 	background-color: var(--circle-teal);
 }
 
@@ -152,11 +149,6 @@ h3 {
 	font-weight: bolder;
 
 	background-color: var(--circle-teal);
-}
-
-.circles {
-	width: 350px;
-	margin: auto;
 }
 
 /*.frame {*/
