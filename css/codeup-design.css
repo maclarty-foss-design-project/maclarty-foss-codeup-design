@@ -8,8 +8,10 @@
 }
 
 /*DEFAULT XS STYLING*/
-body {
+body.container {
 	background-color: var(--bg-lightgray);
+	margin: 0;
+	padding: 0;
 	/*background-color: cornflowerblue; !* for container dimensions and color contrasts *!*/
 }
 
@@ -47,7 +49,7 @@ body {
 }
 
 .circle {
-	margin: .5em;
+	margin: .2em;
 	width: 130px;
 	height: 130px;
 	border-radius: 50%;
@@ -162,5 +164,16 @@ p {
 
 /*SM STYLING*/
 @media screen and (min-width:576px) {
+	.nav-links {
+		display: none;
+	}
 
+	.visual-design {
+		width: 576px;
+	}
+
+	.circles {
+	width: 576px;
+	margin: 4em 0 0 0;
+}
 }
