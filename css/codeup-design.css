@@ -57,13 +57,25 @@ body {
 	color: white;
 	font-family: "Anton", sans-serif;
 	font-size: 1.5em;
-}
-
-.circle-green {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.circle-red {
+	background-color: var(--circle-red);
+}
+
+.circle-orange {
+	background-color: var(--circle-orange);
+}
+
+.circle-green {
 	background-color: var(--circle-green);
+}
+
+.circle-teal {
+	background-color: var(--circle-teal);
 }
 
 .icon-green {
@@ -82,13 +94,6 @@ body {
 	background-color: var(--circle-green);
 }
 
-.circle-orange {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--circle-orange);
-}
-
 .icon-orange {
 	display: flex;
 	justify-content: center;
@@ -105,13 +110,6 @@ body {
 	background-color: var(--circle-orange);
 }
 
-.circle-red {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--circle-red);
-}
-
 .icon-red {
 	display: flex;
 	justify-content: center;
@@ -126,13 +124,6 @@ body {
 	font-weight: bolder;
 
 	background-color: var(--circle-red);
-}
-
-.circle-teal {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--circle-teal);
 }
 
 .icon-teal {
@@ -193,3 +184,12 @@ h5 {
 p {
 	font-family: "Abel", sans-serif;
 } */
+
+#selected-work {
+	width: 313px;
+	justify-content: center;
+}
+
+.sub-feat-prod {
+	margin: 0;
+}
