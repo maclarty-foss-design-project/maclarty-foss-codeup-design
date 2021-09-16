@@ -1,13 +1,13 @@
 :root {
 	--bg-lightgray: #F0F0F0;
-
 	--img-outline-gray: #E6E6E6;
-
 	--circle-green: #7CB06C;
 	--circle-orange: #EB9D3A;
 	--circle-red: #E6563B;
 	--circle-teal: #00ABA9;
 }
+
+/*DEFAULT XS STYLING*/
 body {
 	background-color: var(--bg-lightgray);
 	/*background-color: cornflowerblue; !* for container dimensions and color contrasts *!*/
@@ -20,7 +20,6 @@ body {
 
 .contact-info {
 	display: flex;
-
 }
 
 .codeup-design-title>h1 {
@@ -31,7 +30,6 @@ body {
 	margin-top: 1em;
 	font-family: "Abel", sans-serif;
 	width: 313px;
-	/*justify-content: space-evenly;*/
 }
 
 .visual-design {
@@ -160,4 +158,9 @@ p {
 
 .feat-image img {
 	padding: .6em;
+}
+
+/*SM STYLING*/
+@media screen and (min-width:576px) {
+
 }
