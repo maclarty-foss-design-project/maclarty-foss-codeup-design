@@ -28,13 +28,17 @@ h3 {
 
 }
 
+.circle {
+	margin: .5em;
+	width: 105px;
+	height: 105px;
+}
+
 .circle-green {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	width: 105px;
-	height: 105px;
 	border-radius: 50%;
 	border: solid 7px white;
 
@@ -65,8 +69,6 @@ h3 {
 	justify-content: center;
 	align-items: center;
 
-	width: 105px;
-	height: 105px;
 	border-radius: 50%;
 	border: solid 7px white;
 
@@ -97,8 +99,6 @@ h3 {
 	justify-content: center;
 	align-items: center;
 
-	width: 105px;
-	height: 105px;
 	border-radius: 50%;
 	border: solid 7px white;
 
@@ -129,8 +129,6 @@ h3 {
 	justify-content: center;
 	align-items: center;
 
-	width: 105px;
-	height: 105px;
 	border-radius: 50%;
 	border: solid 7px white;
 
