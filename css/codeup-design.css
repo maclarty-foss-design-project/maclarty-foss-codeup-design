@@ -138,7 +138,7 @@ p {
 
 #selected-work {
 	width: 313px;
-	justify-content: center;
+	margin: auto;
 }
 
 #selected-work h3, #selected-work h6 {
