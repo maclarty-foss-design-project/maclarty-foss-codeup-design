@@ -1,0 +1,9 @@
+- added "img-fluid" to apple-ipad.jpg
+
+- added class logo-default
+
+- added to existing body css:
+    background-color: cornflowerblue; /* for container dimensions and color contrasts */
+
+- added <span class="border border-5"> to apple-pad.jpg
+    * this is not currently working, but documentation example image matches exercise requirement

@@ -9,32 +9,19 @@
 	--circle-teal: #00ABA9;
 }
 body {
-	background-color: var(--bg-lightgray);
+	/*background-color: var(--bg-lightgray);*/
+	background-color: cornflowerblue; /* for container dimensions and color contrasts */
 }
 
-.main-logo {
-	/*display: flex;*/
-	/*justify-content: center;*/
-	/*align-items: center;*/
+.logo-default {
+	height: 105px;
+	width: 105px;
 }
-
-/*.codeup-design-title {*/
-
-/*}*/
 
 .contact-info {
 	display: flex;
 
 }
-
-/*h1 {*/
-/*	display:flex;*/
-/*	justify-content: center;*/
-/*	align-items: center;*/
-/*	*/
-/*	font-family: "Anton", sans-serif;*/
-
-/*}*/
 
 h3 {
 	font-family: "Anton", sans-serif;
