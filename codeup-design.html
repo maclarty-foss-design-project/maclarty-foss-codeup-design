@@ -15,34 +15,27 @@
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Anton'>
     <link rel="stylesheet" href="css/codeup-design.css">
 
-    <!-- format and color contrast -->
-        <!-- <style>
-            body {
-                background-color: lightseagreen;
-            }
-        </style> -->
-
     <title>Codeup Design</title>
 </head>
 
-<body>
-
-<div class="container">
+<body class="container">
 
 <!-- begin header-->
     <div class="row">
-        <div class="main-logo col-xs-1 mx-auto">
-        <img src="img/logo.png" alt="Codeup Design Logo" width="105" height="105">
+        <div class="main-logo col-xs-1 mx-auto mt-3">
+        <!--logo-->
+        <img src="img/logo.png" class="logo-default" alt="Codeup Design Logo">
         </div>
     </div>
     <div class="row">
+    <!--codeup title-->
     <div class="codeup-design-title col-xs-1 mx-auto">
-        <h3>codeup design</h3>
+        <h1>codeup design</h1>
     </div>
     </div>
 
-
-    <div class="row">
+    <!--nav links-->
+    <div class="row nav-links mx-auto">
         <div class="col-xs-3 mx-auto">SERVICES</div>
         <div class="col-xs-3 mx-auto">WORK</div>
         <div class="col-xs-3 mx-auto">BLOG</div>
@@ -50,41 +43,20 @@
     </div>
 <!-- end header -->
 
-<!-- begin title -->
-<div>
-    <div class="row">
-    <div class="text-center mx-auto">
-        <h3>VISUAL DESIGN & WEB DEVELOPMENT</h3>
-    </div>
-    </div>
-
-    <div class="row">
-    <div class="text-center mx-auto">
-        <h3>FROM PARK CITY, UTAH</h3>
-    </div>
+<!-- begin visual design title -->
+    <div class="text-center mx-auto visual-design">
+        <h1 class="mt-5">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+        <h3 class="mt-4">FROM PARK CITY, UTAH</h3>
     </div>
 <!-- end title-->
 
 <!-- begin circle elements-->
-    <div class="row mx-auto">
-        <div class="col-6 d-flex justify-content-center">
-            <div class="circle-red">DESIGN</div>
-        </div>
+    <div class="row justify-content-center flex-wrap circles mx-auto">
 
-        <div class="col-6 d-flex justify-content-center">
-        <div class="circle-orange">DESIGN</div>
-        </div>
-    </div>
-
-
-    </div>
-    <div class="row mx-auto">
-        <div class="col-6 d-flex justify-content-center">
-            <div class="circle-green">SUPPORT</div>
-        </div>
-        <div class="col-6 d-flex justify-content-center">
-            <div class="circle-teal">HOST</div>
-        </div>
+        <div class="circle circle-red">DESIGN</div>
+        <div class="circle circle-orange">DESIGN</div>
+        <div class="circle circle-green">SUPPORT</div>
+        <div class="circle circle-teal">HOST</div>
     </div>
 
 <!-- end circle elements -->
@@ -95,9 +67,10 @@
 <div>
     <h3>SELECTED WORK</h3>
     <div>
-        <div class="frame">
-            <img src="img/apple-ipad.jpg" alt="apple-ipad-with-apples">
-        </div>
+        <span class="border border-5">
+            <img src="img/apple-ipad.jpg" class="img-fluid" alt="apple-ipad-with-apples">
+        </span>
+
         <div class="row">
             <h6 class="col-8">FEATURED PROJECT</h6>
             <div class="col-1 icon-red">D</div>
@@ -108,20 +81,99 @@
     </div>
 </div>
 
-<!-- end selected work section -->
 
-<!---->
 
-<!-- end title -->
+<!-- begin hidden on all but extra small -->
+<div class="d-none s-sm-block">
+
+<div>
+        <span class="border border-5">
+            <img src="img/man.jpg" class="img-fluid" alt="Face covered in binary">
+        </span>
+        <div class="row">
+            <h6 class="col-8">FEATURED PROJECT</h6>
+            <div class="col-1 icon-red">D</div>
+            <div class="col-1 icon-orange">D</div>
+            <div class="col-1 icon-green">S</div>
+            <div class="col-1 icon-teal">H</div>
+        </div>
 </div>
 
-</div> <!-- end grid container -->
+<div>
+        <span class="border border-5">
+            <img src="img/macbook.jpg" class="img-fluid" alt="Macbook, iPad and iMac">
+        </span>
+        <div class="row">
+            <h6 class="col-8">FEATURED PROJECT</h6>
+            <div class="col-1 icon-red">D</div>
+            <div class="col-1 icon-orange">D</div>
+            <div class="col-1 icon-green">S</div>
+            <div class="col-1 icon-teal">H</div>
+        </div>
+</div>
+
+<div>
+        <span class="border border-5">
+            <img src="img/security.jpg" class="img-fluid" alt="Handing pointing at the word security">
+        </span>
+        <div class="row">
+            <h6 class="col-8">FEATURED PROJECT</h6>
+            <div class="col-1 icon-red">D</div>
+            <div class="col-1 icon-orange">D</div>
+            <div class="col-1 icon-green">S</div>
+            <div class="col-1 icon-teal">H</div>
+        </div>
+</div>
+<!-- end selected work section -->
+
+<!-- begin end hidden on all but small -->
+<!--<div class="d-none d-sm-block d-md-none"> returnreturn - does not work -->
+
+<!-- begin the last -->
+<div>
+
+    <h3>THE LAST</h3>
+
+    <div>
+    <img src="img/mobile-phone.jpg" class="img-fluid" alt="Phone">
+    </div>
+    <div>
+        THE ADMIN BAR AND ABSOLUTE POSITIONING
+    </div>
 
 
+    <div>
+        <img src="img/head.jpg" class="img-fluid" alt="Head drawn with lines">
+    </div>
+    <div>
+        NIBBLER AWESOME WEBSITE TESTING
+    </div>
+
+    <div>
+        <img src="img/ipad.jpg" class="img-fluid" alt="iPad with a rainbow on the screen">
+    </div>
+    <div>
+        HOW TO GET GOOGLE TO LIKE YOU
+    </div>
 
 
+    <div>
+        <i class="bi bi-twitter"></i> LAST TWEET
+    <div>
+        lorem here
+    </div>
+
+</div>
+<!-- end the last -->
+
+</div>
+<!-- end hidden on all but extra small -->
+
+<!-- end hidden on all but small -->
+</div>
 
 
+    
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script> -->

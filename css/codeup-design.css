@@ -10,50 +10,59 @@
 }
 body {
 	background-color: var(--bg-lightgray);
+	/*background-color: cornflowerblue; !* for container dimensions and color contrasts *!*/
 }
 
-.main-logo {
-	/*display: flex;*/
-	/*justify-content: center;*/
-	/*align-items: center;*/
+.logo-default {
+	height: 130px;
+	width: 130px;
 }
-
-/*.codeup-design-title {*/
-
-/*}*/
 
 .contact-info {
 	display: flex;
 
 }
 
-/*h1 {*/
-/*	display:flex;*/
-/*	justify-content: center;*/
-/*	align-items: center;*/
-/*	*/
-/*	font-family: "Anton", sans-serif;*/
+.codeup-design-title>h1 {
+	font-family: "Abel", sans-serif;
+}
 
-/*}*/
+.nav-links {
+	margin-top: 1em;
+	font-family: "Abel", sans-serif;
+	width: 313px;
+	/*justify-content: space-evenly;*/
+}
 
-h3 {
+.visual-design {
 	font-family: "Anton", sans-serif;
+	width: 313px;
+}
 
+.visual-design>h1 {
+	font-size: 2.5em;
+}
+
+.circles {
+	width: 313px;
+	margin: auto;
+}
+
+.circle {
+	margin: .5em;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: solid 7px white;
+	color: white;
+	font-family: "Anton", sans-serif;
+	font-size: 1.5em;
 }
 
 .circle-green {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	width: 105px;
-	height: 105px;
-	border-radius: 50%;
-	border: solid 7px white;
-
-	font-family: anton, sans-serif;
-	color: white;
-
 	background-color: var(--circle-green);
 }
 
@@ -77,15 +86,6 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	width: 105px;
-	height: 105px;
-	border-radius: 50%;
-	border: solid 7px white;
-
-	font-family: anton, sans-serif;
-	color: white;
-
 	background-color: var(--circle-orange);
 }
 
@@ -109,15 +109,6 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	width: 105px;
-	height: 105px;
-	border-radius: 50%;
-	border: solid 7px white;
-
-	font-family: anton, sans-serif;
-	color: white;
-
 	background-color: var(--circle-red);
 }
 
@@ -141,15 +132,6 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	width: 105px;
-	height: 105px;
-	border-radius: 50%;
-	border: solid 7px white;
-
-	font-family: anton, sans-serif;
-	color: white;
-
 	background-color: var(--circle-teal);
 }
 
