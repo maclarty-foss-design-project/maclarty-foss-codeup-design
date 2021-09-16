@@ -88,6 +88,9 @@ h1#web-dev {
 
 img {
     width: 100%;
+    padding: 10px;
+    background-color: darkgrey;
+    margin: 1em;
 }
 
 .feat-prod {
