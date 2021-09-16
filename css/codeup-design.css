@@ -154,6 +154,11 @@ h3 {
 	background-color: var(--circle-teal);
 }
 
+.circles {
+	width: 350px;
+	margin: auto;
+}
+
 /*.frame {*/
 /*	width: auto;*/
 /*  	height: auto;*/
