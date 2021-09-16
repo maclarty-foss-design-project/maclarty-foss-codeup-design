@@ -153,3 +153,11 @@ p {
 	margin: auto;
 	font-size: 1.1em;
 }
+
+.feat-image {
+	background-color: var(--img-outline-gray);
+}
+
+.feat-image img {
+	padding: .6em;
+}
