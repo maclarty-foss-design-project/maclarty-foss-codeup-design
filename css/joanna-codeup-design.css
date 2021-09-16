@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ece9e9;
+    font-family: "Abel", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Anton", sans-serif;
+    padding-top: 1em;
+    text-align: center;
+}
+
+h1#web-dev {
+    padding-top: 0;
+}
+
+.container {
+    padding: 0em;
+}
+
+#white-stripe {
+    height: 6em;
+    width: 100%;
+    background-color: white;
+    margin: 4em 0 0 0;
+    padding: 0;
+}
+
+#logo2 {
+    position: absolute;
+    top: 2em;
+    height: 10em;
+    width: 10em;
+}
+
+#codeup-design-company {
+    padding-top: 1em;
+    font-size: xxx-large;
+}
+
+#xs-nav {
+    padding-top: 1em;
+    justify-content: space-evenly;
+}
+
+.circles {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.circle {
+    height: 6em;
+    width: 6em;
+    border-radius: 100%;
+    border: 7px solid white;
+    margin: .5em;
+    font-family: "Anton", sans-serif;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.red {
+    background-color: #E5563A;
+}
+
+.orange {
+    background-color: #E99E17;
+}
+
+.green {
+    background-color: #7CB06C;
+}
+
+.blue {
+    background-color: #00AAA9;
+}
+
+#selected-work {
+    padding-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.feat-prod {
+    flex-grow: 1;
+    text-align: left;
+}
