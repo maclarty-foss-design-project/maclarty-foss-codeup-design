@@ -1,17 +1,11 @@
 <!--
 Might be an extra row:
 -"featured product - row 1" which contains "featured products 1 & 2"
-is inside of "selected work - row" - line 130
+is inside of "selected work - row"
 -this may have been something Larry was setting up, I can't recall
 
-commented out </div> on lines 214, 268, 269 and 277 - didn't have opening divs
+duplicate id = "selected work"
 
-the 2 primary display breakpoint classes aren't working correctly with the unfinished
-changes from Larry we're implementing - i moved opening and closing to top of sections.
-- lines 41 and 74
-
-feel free to remove any comments you feel are useless.  I was using them to straighten
-things out and sort out mismatched tags.
 
 -->
 
@@ -38,20 +32,19 @@ things out and sort out mismatched tags.
 <body class="mx-auto">
 
 <!-- begin visible - only on extra small -->
-<div class="d-block d-sm-none">
-</div>
-<!-- end visible only on extra small -->
+ <div class="d-block d-sm-none">
+
 
 <!-- begin header - only on extra small -->
 
 <!-- begin logo - only on extra small -->
 <div class="row mt-5">
     <div class="main-logo col-xs-1 mx-auto mt-3 logo-bg">
-        <!--logo-->
+        <!-- logo -->
         <img src="img/logo.png" class="logo-default" alt="Codeup Design Logo">
     </div>
 </div>
-<div class="container">
+<!-- <div class="container"> -->
 
 <!-- begin company name - only on extra small -->
     <div class="row">
@@ -70,21 +63,62 @@ things out and sort out mismatched tags.
 
 <!-- end header - only on extra small-->
 
-<!-- begin visible - only on extra small -->
-    <div class="d-none d-sm-block d-md-none">
+<!-- begin description and address - only on extra small -->
+<div class="text-center mx-auto visual-design">
+    <h1 class="mt-5">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+    <h3 class="mt-4">FROM PARK CITY, UTAH</h3>
+</div>
+
+<!-- begin big circle elements - only on extra small-->
+<div class="row justify-content-center flex-wrap circles mx-auto mb-5">
+    <div class="circle circle-red">DESIGN</div>
+    <div class="circle circle-orange">DESIGN</div>
+    <div class="circle circle-green">SUPPORT</div>
+    <div class="circle circle-teal">HOST</div>
+</div>
+
+
+<!-- returnreturn - needs some formatting below, maybe less white space above-->
+<!-- begin selected work - row -->
+<!-- begin selected work section -->
+<div id="selected-work" class="row">
+    <h3 class="mt-5 mb-3">SELECTED WORK</h3>
+<!-- begin featured product - row 1 -->
+    <div class="row">
+<!-- begin featured product 1 -->
+        <div class="feat-prod mb-5 col-12">
+            <div class="feat-image">
+                <img src="img/apple-ipad.jpg" class="img-fluid" alt="apple-ipad-with-apples">
+            </div>
+            <div class="row sub-feat-prod d-flex">
+                <h6 class="feat-text flex-grow-1">FEATURED PROJECT</h6>
+                <div class="icon circle-red">D</div>
+                <div class="icon circle-orange">D</div>
+                <div class="icon circle-green">S</div>
+                <div class="icon circle-teal">H</div>
+            </div>
+        </div>
     </div>
+</div>
+<!-- </div> returnreturn - probably delete-->
+
+</div>
+<!-- end visible only on extra small -->
+
+<!-- begin visible - only on small -->
+<div class="d-none d-sm-block d-md-none">
 
 <!-- begin header for sm and up-->
 
 <!-- begin logo and nav links - small only -->
     <div class="row mt-5">
         <div class="main-logo d-flex justify-content-center mx-auto mt-3 logo-bg">
-            <div class="d-none d-sm-block">SERVICES</div>
-            <div class="d-none d-sm-block">WORK</div>
+            <div>SERVICES</div>
+            <div>WORK</div>
             <!--logo-->
             <img src="img/logo.png" class="logo-default" alt="Codeup Design Logo">
-            <div class="d-none d-sm-block">BLOG</div>
-            <div class="d-none d-sm-block">CONTACT</div>
+            <div>BLOG</div>
+            <div>CONTACT</div>
         </div>
     </div>
 
@@ -146,8 +180,8 @@ things out and sort out mismatched tags.
                     </div>
                 </div>
 
-<!-- begin hidden on extra small-->
-                <div class="d-none d-sm-block">
+<!-- begin hidden on extra small -->
+                <!-- <div class="d-none d-sm-block"> delete? -->
 
 <!-- begin featured product 2 -->
                     <div class="feat-prod mb-5 col-6">
@@ -206,76 +240,175 @@ things out and sort out mismatched tags.
 
 <!-- end selected work section -->
 
-    </div>
-<!-- end container -->
-
 </div>
-
-<!-- returnreturn - no opening tag, probably delete this div -->
-<!--</div>-->
+<!-- end visible - only on small  -->
 
 
-<!-- returnreturn - delete this -->
-<!-- STOPPED CLEANUP HERE -->
 
 
-<!-- begin hidden on all but medium -->
-<div class="d-none d-md-block">
 
-<!-- begin the last -->
-    <div>
 
-        <h3>THE LAST</h3>
 
-        <div>
-            <img src="img/mobile-phone.jpg" class="img-fluid" alt="Phone">
+
+
+<!-- EDITING - BEGIN MEDIUM AND UP -->
+
+
+<!-- begin visible - medium and up -->
+<div class="d-none d-sm-none d-md-block">
+
+<!-- begin header - medium and up-->
+
+
+
+<!-- begin logo and nav links - medium and up -->
+    <div class="row mt-5">
+        <div class="main-logo d-flex justify-content-center mx-auto mt-3 logo-bg">
+            <img src="img/logo.png" class="logo-default" alt="Codeup Design Logo">
+            <div>codeup design</div>
+            <div>SERVICES</div>
+            <div>WORK</div>
+            <div>BLOG</div>
+            <div>CONTACT</div>
         </div>
-        <div>
-            THE ADMIN BAR AND ABSOLUTE POSITIONING
+    </div>
+
+<!-- begin description and address -->
+    <div class="text-center mx-auto visual-design">
+        <h1 class="mt-5">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+        <h3 class="mt-4">FROM PARK CITY, UTAH</h3>
+    </div>
+
+<!-- begin big circle elements-->
+        <div class="row justify-content-center flex-wrap circles mx-auto mb-5">
+            <div class="circle circle-red">DESIGN</div>
+            <div class="circle circle-orange">DESIGN</div>
+            <div class="circle circle-green">SUPPORT</div>
+            <div class="circle circle-teal">HOST</div>
         </div>
 
+<!-- returnreturn - not formatted correctly on medium and up - it spans the entire screen -->
+<!-- begin horizontal rule - visible on small and up -->
+        <hr class="d-none d-sm-block">
 
-        <div>
-            <img src="img/head.jpg" class="img-fluid" alt="Head drawn with lines">
-        </div>
-        <div>
-            NIBBLER AWESOME WEBSITE TESTING
-        </div>
+<!-- medium and large content -->
 
-        <div>
-            <img src="img/ipad.jpg" class="img-fluid" alt="iPad with a rainbow on the screen">
-        </div>
-        <div>
-            HOW TO GET GOOGLE TO LIKE YOU
-        </div>
+<!-- begin selected work and the last titles -->
+    <div class="row">
+        <h3 class="col-8 mt-5 mb-3">SELECTED WORK</h3>
+        <h3 class="col-4 mt-5 mb-3">THE LAST</h3>
+    </div>
+
+<!-- begin selected work and last content row -->
+    <div class="row">
+
+<!-- begin featured product 1 -->
+            <div class="col-4 feat-prod mb-5">
+                <div class="feat-image">
+                    <img src="img/apple-ipad.jpg" class="img-fluid" alt="apple-ipad-with-apples">
+                </div>
+                    <div class="row sub-feat-prod d-flex">
+                        <h6 class="feat-text flex-grow-1">FEATURED PROJECT</h6>
+                            <div class="icon circle-red">D</div>
+                            <div class="icon circle-orange">D</div>
+                            <div class="icon circle-green">S</div>
+                            <div class="icon circle-teal">H</div>
+                    </div>
 
 
-        <div>
-            <i class="bi bi-twitter"></i> LAST TWEET
-            <div>
-                lorem here
+<!-- begin featured product 2 -->
+            <div class="col-3 feat-prod mb-5">
+                <div class="feat-image">
+                    <img src="img/man.jpg" class="img-fluid" alt="Face covered in binary">
+                </div>
+                    <div class="row sub-feat-prod">
+                        <h6 class="feat-text flex-grow-1">FEATURED PROJECT</h6>
+                            <div class="icon circle-red">D</div>
+                            <div class="icon circle-orange">D</div>
+                            <div class="icon circle-green">S</div>
+                            <div class="icon circle-teal">H</div>
+                    </div>
+            </div>
+ </div>
+
+<!-- begin featured product 3 -->
+         <div class="col-4 feat-prod mb-5">
+            <div class="col-3 feat-prod mb-5">
+                <div class="feat-image">
+                    <img src="img/macbook.jpg" class="img-fluid" alt="Macbook, iPad and iMac">
+                </div>
+                <div class="row sub-feat-prod">
+                    <h6 class="feat-text flex-grow-1">FEATURED PROJECT</h6>
+                    <div class="icon circle-red">D</div>
+                    <div class="icon circle-orange">D</div>
+                    <div class="icon circle-green">S</div>
+                    <div class="icon circle-teal">H</div>
+                </div>
             </div>
 
-        </div>
-        <!-- end the last -->
+<!-- begin featured product 4 -->
+            <div class="col-3 feat-image mb-5">
+                <div class="feat-image">
+                    <img src="img/security.jpg" class="img-fluid" alt="Handing pointing at the word security">
+                </div>
+                <div class="row sub-feat-prod">
+                    <h6 class="feat-text flex-grow-1">FEATURED PROJECT</h6>
+                    <div class="icon circle-red">D</div>
+                    <div class="icon circle-orange">D</div>
+                    <div class="icon circle-green">S</div>
+                    <div class="icon circle-teal">H</div>
+                </div>
+            </div>
+</div>
+<!-- end selected work section -->
+
+<!-- begin the last -->
+    <div class="col-4">
+            <div>
+                <img src="img/mobile-phone.jpg" class="img-fluid col-4" alt="Phone">
+                THE ADMIN BAR AND ABSOLUTE POSITIONING
+            </div>
+            <div>
+
+            </div>
+
+            <div>
+                <img src="img/head.jpg" class="img-fluid" alt="Head drawn with lines">
+                NIBBLER AWESOME WEBSITE TESTING
+            </div>
+            <div>
+
+            </div>
+
+            <div>
+                <img src="img/ipad.jpg" class="img-fluid" alt="iPad with a rainbow on the screen">
+                HOW TO GET GOOGLE TO LIKE YOU
+            </div>
+            <div>
+
+            </div>
+
+            <div>
+                <i class="bi bi-twitter"></i> LAST TWEET
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquid.
+            </div>
+            </div>
+
+<!-- end the last -->
+    </div>
+
 
     </div>
-    <!-- end hidden on all but extra small -->
+<!-- end selected work and last content row -->
 
-    <!-- end hidden on all but small -->
 </div>
-
-<!-- returnreturn - no opening tags for 2 closing divs, probably delete -->
-<!--</div>-->
-<!--</div>-->
+<!-- end visible - medium and up -->
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script> -->
 <!-- <script src="codeup-design.js"></script>-->
-
-<!-- returnreturn - no opening tag, probably delete this div -->
-<!--</div>-->
 
 </body>
 
