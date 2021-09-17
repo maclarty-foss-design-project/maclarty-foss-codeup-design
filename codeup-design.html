@@ -1,20 +1,3 @@
-<!--
-Might be an extra row:
--"featured product - row 1" which contains "featured products 1 & 2"
-is inside of "selected work - row" - line 130
--this may have been something Larry was setting up, I can't recall
-
-commented out </div> on lines 214, 268, 269 and 277 - didn't have opening divs
-
-the 2 primary display breakpoint classes aren't working correctly with the unfinished
-changes from Larry we're implementing - i moved opening and closing to top of sections.
-- lines 41 and 74
-
-feel free to remove any comments you feel are useless.  I was using them to straighten
-things out and sort out mismatched tags.
-
--->
-
 <!doctype html>
 <html lang="en">
 
@@ -35,27 +18,24 @@ things out and sort out mismatched tags.
     <title>Codeup Design</title>
 </head>
 
-<body class="mx-auto">
+<body>
 
-<!-- begin visible - only on extra small -->
-<div class="d-block d-sm-none">
-</div>
-<!-- end visible only on extra small -->
-
-<!-- begin header - only on extra small -->
-
-<!-- begin logo - only on extra small -->
 <div class="row mt-5">
     <div class="main-logo col-xs-1 mx-auto mt-3 logo-bg">
-        <!--logo-->
-        <img src="img/logo.png" class="logo-default" alt="Codeup Design Logo">
+        <div class="main-logo d-flex justify-content-center mx-auto mt-3 logo-bg">
+            <div class="d-none d-sm-block">SERVICES</div>
+            <div class="d-none d-sm-block">WORK</div>
+            <img src="img/logo.png" class="logo-default" alt="Codeup Design Logo">
+            <div class="d-none d-sm-block">BLOG</div>
+            <div class="d-none d-sm-block">CONTACT</div>
+        </div>
     </div>
 </div>
 <div class="container">
 
 <!-- begin company name - only on extra small -->
     <div class="row">
-        <div class="codeup-design-title col-xs-1 mx-auto">
+        <div class="codeup-design-title mx-auto">
             <h1>codeup design</h1>
         </div>
     </div>
@@ -68,76 +48,31 @@ things out and sort out mismatched tags.
         <div class="col-xs-3 mx-auto">CONTACT</div>
     </div>
 
-<!-- end header - only on extra small-->
-
-<!-- begin visible - only on extra small -->
-    <div class="d-none d-sm-block d-md-none">
+    <!-- begin description and address -->
+    <div class="text-center mx-auto visual-design">
+        <h1 class="mt-5">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+        <h3 class="mt-4">FROM PARK CITY, UTAH</h3>
     </div>
 
-<!-- begin header for sm and up-->
-
-<!-- begin logo and nav links - small only -->
-    <div class="row mt-5">
-        <div class="main-logo d-flex justify-content-center mx-auto mt-3 logo-bg">
-            <div class="d-none d-sm-block">SERVICES</div>
-            <div class="d-none d-sm-block">WORK</div>
-            <!--logo-->
-            <img src="img/logo.png" class="logo-default" alt="Codeup Design Logo">
-            <div class="d-none d-sm-block">BLOG</div>
-            <div class="d-none d-sm-block">CONTACT</div>
-        </div>
+    <!-- begin big circle elements-->
+    <div class="row justify-content-center flex-wrap circles mx-auto mb-5">
+        <div class="circle circle-red">DESIGN</div>
+        <div class="circle circle-orange">DESIGN</div>
+        <div class="circle circle-green">SUPPORT</div>
+        <div class="circle circle-teal">HOST</div>
     </div>
-
-<!-- begin container -->
-<!-- begin company name - small only -->
-    <div class="container">
-        <div class="row">
-<!--codeup title-->
-            <div class="codeup-design-title col-xs-1 mx-auto">
-                <h1>codeup design</h1>
-            </div>
-        </div>
-
-<!-- returnreturn - not sure why this is here-->
-<!--nav links-->
-<!--        <div class="row nav-links mx-auto">-->
-<!--            <div class="col-xs-3 mx-auto">SERVICES</div>-->
-<!--            <div class="col-xs-3 mx-auto">WORK</div>-->
-<!--            <div class="col-xs-3 mx-auto">BLOG</div>-->
-<!--            <div class="col-xs-3 mx-auto">CONTACT</div>-->
-<!--        </div>-->
-
-<!-- end header for small and up-->
-
-<!-- begin description and address -->
-        <div class="text-center mx-auto visual-design">
-            <h1 class="mt-5">VISUAL DESIGN & WEB DEVELOPMENT</h1>
-            <h3 class="mt-4">FROM PARK CITY, UTAH</h3>
-        </div>
-
-<!-- begin big circle elements-->
-        <div class="row justify-content-center flex-wrap circles mx-auto mb-5">
-            <div class="circle circle-red">DESIGN</div>
-            <div class="circle circle-orange">DESIGN</div>
-            <div class="circle circle-green">SUPPORT</div>
-            <div class="circle circle-teal">HOST</div>
-        </div>
-
-<!-- begin horizontal rule - visible on small and up -->
-        <hr class="d-none d-sm-block">
-
-<!-- begin selected work - row -->
-<!-- begin selected work section -->
+</div>
+<div class="container container-2">
+    <hr class="d-none d-sm-block"> <!--horizontal rule - visible on small and up -->
+    <div id="selected-AND-last" class="row">
         <div id="selected-work" class="row">
             <h3 class="mt-5 mb-3">SELECTED WORK</h3>
-<!-- begin featured product - row 1 -->
-            <div class="row">
-<!-- begin featured product 1 -->
-                <div class="feat-prod mb-5 col-6">
+                <!-- begin featured product 1 -->
+                <div class="feat-prod mb-5">
                     <div class="feat-image">
                         <img src="img/apple-ipad.jpg" class="img-fluid" alt="apple-ipad-with-apples">
                     </div>
-                    <div class="row sub-feat-prod d-flex">
+                    <div class="row sub-feat-prod">
                         <h6 class="feat-text flex-grow-1">FEATURED PROJECT</h6>
                         <div class="icon circle-red">D</div>
                         <div class="icon circle-orange">D</div>
@@ -146,35 +81,22 @@ things out and sort out mismatched tags.
                     </div>
                 </div>
 
-<!-- begin hidden on extra small-->
-                <div class="d-none d-sm-block">
-
-<!-- begin featured product 2 -->
-                    <div class="feat-prod mb-5 col-6">
-                        <div class="feat-image">
-                            <img src="img/man.jpg" class="img-fluid" alt="Face covered in binary">
-                        </div>
-                        <div class="row sub-feat-prod">
-                            <h6 class="feat-text flex-grow-1">FEATURED PROJECT</h6>
-                            <div class="icon circle-red">D</div>
-                            <div class="icon circle-orange">D</div>
-                            <div class="icon circle-green">S</div>
-                            <div class="icon circle-teal">H</div>
-                        </div>
+                <!-- begin featured product 2 -->
+                <div class="feat-prod mb-5">
+                    <div class="feat-image">
+                        <img src="img/man.jpg" class="img-fluid" alt="Face covered in binary">
+                    </div>
+                    <div class="row sub-feat-prod">
+                        <h6 class="feat-text flex-grow-1">FEATURED PROJECT</h6>
+                        <div class="icon circle-red">D</div>
+                        <div class="icon circle-orange">D</div>
+                        <div class="icon circle-green">S</div>
+                        <div class="icon circle-teal">H</div>
                     </div>
                 </div>
 
-
-            </div>
-<!-- end featured product - row 1 -->
-
-<!-- end sected work - row -->
-        </div>
-
-<!-- begin featured product - row 2 -->
-<!-- begin featured product 3 -->
-        <div class="row">
-            <div class="col-6 feat-prod mb-5">
+            <!--featured product 3-->
+            <div class="feat-prod mb-5">
                 <div class="feat-image">
                     <img src="img/macbook.jpg" class="img-fluid" alt="Macbook, iPad and iMac">
                 </div>
@@ -187,8 +109,8 @@ things out and sort out mismatched tags.
                 </div>
             </div>
 
-<!-- begin featured product 4 -->
-            <div class="col-6 feat-prod mb-5">
+            <!--featured product 4-->
+            <div class="feat-prod mb-5">
                 <div class="feat-image">
                     <img src="img/security.jpg" class="img-fluid" alt="Handing pointing at the word security">
                 </div>
@@ -200,30 +122,13 @@ things out and sort out mismatched tags.
                     <div class="icon circle-teal">H</div>
                 </div>
             </div>
-
-<!-- end featured product - row 2 -->
         </div>
 
-<!-- end selected work section -->
-
-    </div>
-<!-- end container -->
-
-</div>
-
-<!-- returnreturn - no opening tag, probably delete this div -->
-<!--</div>-->
-
-
-<!-- returnreturn - delete this -->
-<!-- STOPPED CLEANUP HERE -->
-
-
 <!-- begin hidden on all but medium -->
-<div class="d-none d-md-block">
+<!--<div class="d-none d-md-block">-->
 
 <!-- begin the last -->
-    <div>
+    <div id="the-last" class="row">
 
         <h3>THE LAST</h3>
 
@@ -264,19 +169,11 @@ things out and sort out mismatched tags.
 
     <!-- end hidden on all but small -->
 </div>
-
-<!-- returnreturn - no opening tags for 2 closing divs, probably delete -->
-<!--</div>-->
-<!--</div>-->
-
+</div>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script> -->
 <!-- <script src="codeup-design.js"></script>-->
-
-<!-- returnreturn - no opening tag, probably delete this div -->
-<!--</div>-->
-
 </body>
 
 </html>  

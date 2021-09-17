@@ -16,17 +16,11 @@ body {
 }
 
 .logo-bg {
-    /*margin-top: 30px;*/
     background-color: white;
     text-align: center;
     height: 60px;
-    /*padding-bottom: 50px;*/
     margin-bottom: 70px;
     width: 100%;
-	/*margin: 30px 0px 70px 0px;*/
-	overflow: visible;
-
-
 }
 
 .logo-default {
@@ -99,8 +93,8 @@ body {
 	justify-content: center;
 	align-items: center;
 
-	width: 25px;
-	height: 25px;
+	width: 2em;
+	height: 2em;
 	border-radius: 50%;
 	margin: .5em;
 
@@ -109,60 +103,27 @@ body {
 	font-weight: bolder;
 }
 
-/*.frame {*/
-/*	width: auto;*/
-/*  	height: auto;*/
-/*	border: 3px solid lightgray;*/
-/*	background: var(--bg-lightgray);*/
-/*  	margin: auto;*/
-/*  	padding: 15px 10px;*/
-/*}*/
-
-/*img {*/
-/*	width: 90%;*/
-/*	height: 90%;*/
-/*}*/
-
-/* h1 {
-	font-family: "Anton", sans-serif;
-	height: 64px;
-}
-
-h2 {
-	font-family: "Anton", sans-serif;
-	height: 48px;
-}
-
-h3 {
-	font-family: "Anton", sans-serif;
-	height: 40px;
-}
-
-h4 {
-	font-family: "Anton", sans-serif;
-	height: 32px;
-}
-
-h5 {
-	font-family: "Anton", sans-serif;
-	height: 28px;
-}
-
-p {
-	font-family: "Abel", sans-serif;
-} */
-
 #selected-work {
-	/*width: 313px;*/
-	/*margin: auto;*/
+	width: 313px;
+	margin: auto;
+	display: flex;
 }
 
-#selected-work h3, #selected-work h6 {
+#selected-work h3 {
 	font-family: "Abel", sans-serif;
+	margin: auto;
+	display: block;
+	font-size: 15px;
+}
+
+#selected-work h6 {
+	font-family: "Abel", sans-serif;
+	font-size: 15px;
 }
 
 .sub-feat-prod {
 	margin: 0;
+	display: flex;
 }
 
 .feat-text {
@@ -176,6 +137,10 @@ p {
 
 .feat-image img {
 	padding: .6em;
+}
+
+#the-last {
+	display: none;
 }
 
 /*SM STYLING*/
@@ -197,7 +162,65 @@ p {
 		margin: 1em;
 	}
 
-	/*.feat-prod {*/
-	/*	width: 13em;*/
-	/*}*/
+	#selected-work {
+		width: 576px;
+		justify-content: space-between;
+		margin: auto;
+	}
+
+	#selected-work h3{
+		width: 100%;
+	}
+
+	#selected-work h6{
+		font-size: 15px;
+	}
+
+	.feat-prod {
+		width: 45%;
+	}
+
+	.sub-feat-prod {
+		width: 100%;
+	}
+
+	#the-last {
+		display: none;
+	}
+
+	#selected-AND-last {
+		justify-content: center;
+	}
+}
+
+/*MD STYLING*/
+@media screen and (min-width:768px) {
+	#selected-work {
+		width: 400px;
+		margin: .5em;
+		display: flex;
+		justify-content: center;
+	}
+
+	.container-2 {
+		width: 720px;
+	}
+
+	#selected-AND-last {
+		justify-content: space-between;
+	}
+
+	.sub-feat-prod {
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.feat-text {
+		margin: 0 auto;
+	}
+
+	#the-last {
+		display: unset;
+		width: 5em;
+	}
 }
