@@ -153,8 +153,8 @@ p {
 } */
 
 #selected-work {
-	/*width: 313px;*/
-	/*margin: auto;*/
+	width: 313px;
+	margin: auto;
 }
 
 #selected-work h3, #selected-work h6 {
@@ -197,7 +197,36 @@ p {
 		margin: 1em;
 	}
 
-	/*.feat-prod {*/
-	/*	width: 13em;*/
-	/*}*/
+	#selected-work {
+		width: 576px;
+		margin: auto;
+	}
+
+	.feat-text {
+		width: 50%;
+	}
+
+	.icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	hr {
+		width: 90%;
+	}
+
+	#selected-AND-last {
+		width: 768px;
+	}
+
+	#selected-work {
+		width: 65%;
+		margin: 5em;
+	}
+
+	.feat-prod {
+		width: 50%;
+	}
 }
