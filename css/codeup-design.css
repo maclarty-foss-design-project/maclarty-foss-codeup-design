@@ -213,6 +213,20 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+	.title-md-lg {
+		font-family: "Abel", sans-serif;
+		font-size: xx-large;
+	}
+
+	.nav-links-md-lg {
+		font-family: "Abel", sans-serif;
+		font-size: small;
+	}
+
+	.container-md-lg {
+		width: 768px;
+	}
+
 	hr {
 		width: 90%;
 	}
@@ -229,4 +243,47 @@ p {
 	.feat-prod {
 		width: 50%;
 	}
+
+	.selected-and-last-titles h3 {
+		font-family: "Abel", sans-serif;
+		font-size: medium;
+	}
+
+	.feat-text {
+		font-family: "Abel", sans-serif;
+		font-size: x-small;
+	}
+
+	.logo-default {
+		margin: 3.5em 0 0 2em;
+	}
+
+	.icon {
+		width: 12px;
+		height: 12px;
+		font-size: 7px;
+	}
+
+	.last-icon {
+		height: 50px;
+		width: 50px;
+		float: left;
+	}
+
+	.last-text {
+		font-family: "Anton", sans-serif;
+		font-size: medium;
+	}
+
+	.twitter-text {
+		font-family: "Abel", sans-serif;
+		font-size: small;
+	}
+
+	.twitter-title {
+		font-family: "Abel", sans-serif;
+		font-size: large;
+		font-weight: bold;
+	}
+
 }
